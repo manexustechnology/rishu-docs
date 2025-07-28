@@ -7,6 +7,7 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
 
 import styles from './index.module.css';
+import { Redirect } from '@docusaurus/router';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -39,16 +40,19 @@ function HomepageHeader() {
 }
 
 export default function Home(): ReactNode {
-  const { siteConfig } = useDocusaurusContext();
-  return (
-    <Layout
-      title={`${siteConfig.title}`}
-      description="Learn Rishu by reading our documentation"
-    >
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
-    </Layout>
-  );
+  // const { siteConfig } = useDocusaurusContext();
+
+  // return (
+  //   <Layout
+  //     title={`${siteConfig.title}`}
+  //     description="Learn Rishu by reading our documentation"
+  //   >
+  //     <HomepageHeader />
+  //     <main>
+  //       <HomepageFeatures />
+  //     </main>
+  //   </Layout>
+  // );
+
+  return <Redirect to="/docs/introduction" />;
 }
