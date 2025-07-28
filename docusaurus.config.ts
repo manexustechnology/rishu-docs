@@ -71,7 +71,7 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/rishu-card.jpg',
+    image: 'img/rishu-card.png',
     navbar: {
       title: 'Rishu',
       logo: {
