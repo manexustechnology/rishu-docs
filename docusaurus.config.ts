@@ -142,6 +142,12 @@ const config: Config = {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
+    algolia: {
+      appId: 'I2WD36XA54',
+      apiKey: 'fa714d0030079ae5556bc21004bdec1b',
+      indexName: 'Rishu Documentation Website',
+      contextualSearch: true,
+    },
   } satisfies Preset.ThemeConfig,
 };
 
