@@ -28,3 +28,69 @@
   --ifm-color-primary-lightest: #b54fdd;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Custom Callout Styling */
+:root {
+  --ifm-alert-color: #1a1a1a;
+  --ifm-alert-background-color: #f8f9fa;
+  --ifm-alert-border-color: #e9ecef;
+  --ifm-alert-border-left-color: #007bff;
+}
+
+/* Light mode callout styling */
+.alert--warning {
+  --ifm-alert-background-color: #fff3cd;
+  --ifm-alert-border-left-color: #ffc107;
+  --ifm-alert-color: #856404;
+}
+
+.alert--info {
+  --ifm-alert-background-color: #d1ecf1;
+  --ifm-alert-border-left-color: #17a2b8;
+  --ifm-alert-color: #0c5460;
+}
+
+.alert--success {
+  --ifm-alert-background-color: #d4edda;
+  --ifm-alert-border-left-color: #28a745;
+  --ifm-alert-color: #155724;
+}
+
+/* Dark mode callout styling */
+[data-theme='dark'] .alert--warning {
+  --ifm-alert-background-color: #3d2c02;
+  --ifm-alert-border-left-color: #ffc107;
+  --ifm-alert-color: #ffd54f;
+}
+
+[data-theme='dark'] .alert--info {
+  --ifm-alert-background-color: #0d3c44;
+  --ifm-alert-border-left-color: #17a2b8;
+  --ifm-alert-color: #4dd0e1;
+}
+
+[data-theme='dark'] .alert--success {
+  --ifm-alert-background-color: #0d3c0d;
+  --ifm-alert-border-left-color: #28a745;
+  --ifm-alert-color: #66bb6a;
+}
+
+/* Make callouts more prominent */
+.alert {
+  border-radius: 8px;
+  border-left-width: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 1.5rem 0;
+  padding: 1rem 1.25rem;
+}
+
+.alert__title {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Dark mode specific adjustments */
+[data-theme='dark'] .alert {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+

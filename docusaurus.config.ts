@@ -108,17 +108,17 @@ const config: Config = {
         {
           title: 'Community',
           items: [
-            // {
-            //   label: 'Telegram',
-            //   href: 'https://t.me/',
-            // },
-            // {
-            //   label: 'Discord',
-            //   href: 'https://discordapp.com/invite/docusaurus',
-            // },
             {
-              label: 'X',
+              label: '𝕏',
               href: 'https://x.com/rishuapp',
+            },
+            {
+              label: 'Telegram',
+              href: 'https://t.me/rishuPortal',
+            },
+            {
+              label: 'Discord',
+              href: 'https://discord.gg/RGDAMzpBAg',
             },
           ],
         },
