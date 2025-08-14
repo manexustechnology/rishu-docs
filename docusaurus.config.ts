@@ -42,6 +42,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
+          routeBasePath: 'docs',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl:
@@ -72,6 +73,16 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     image: 'img/rishu-card.png',
+    // Custom sidebar theme configuration
+    sidebarTheme: 'gradient', // Options: 'default', 'gradient', 'glass', 'dark'
+
+    // Set dark mode as default
+    colorMode: {
+      defaultMode: 'dark',
+      disableSwitch: false,
+      respectPrefersColorScheme: false,
+    },
+
     navbar: {
       title: 'Rishu',
       logo: {
@@ -96,15 +107,6 @@ const config: Config = {
     footer: {
       style: 'dark',
       links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Documentation',
-              to: '/docs/introduction',
-            },
-          ],
-        },
         {
           title: 'Community',
           items: [
